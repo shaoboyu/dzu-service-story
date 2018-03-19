@@ -9,7 +9,7 @@
     <!--创建一个打印服务日志到指定目录的appender-->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
          <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-         <fileNamePattern>/data/log/LOG_%d{yyyyMMdd_HH}.log</fileNamePattern>
+         <fileNamePattern>/data/log/dzu-service-story/LOG_%d{yyyyMMdd_HH}.log</fileNamePattern>
          <maxHistory>30</maxHistory>
          </rollingPolicy>
 
