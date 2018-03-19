@@ -14,16 +14,21 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 @EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
 public class BootApplication extends SpringBootServletInitializer {
 
+    /**
+     * 加载配置文件
+     * */
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(BootApplication.class);
     }
 
     /**
+     * 主程序入口
      * @param args
      */
     public static void main(String[] args) {
         SpringApplication.run(BootApplication.class, args);
+        System.out.println("=====================>BootApplication start finish!<=======================");
     }
 
 }

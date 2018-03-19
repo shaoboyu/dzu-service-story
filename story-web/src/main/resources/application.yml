@@ -20,7 +20,7 @@ spring:
 
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost/db_mblog?useSSL=false&characterEncoding=utf8
+        url: jdbc:mysql://118.89.245.135/db_story?useSSL=false&characterEncoding=utf8
         username: root
         password: root
 
