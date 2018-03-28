@@ -23,7 +23,7 @@ seajs.config({
         'jcrop': 'vendors/jcrop/jquery.jcrop.min',
         'validate': 'vendors/validate/jquery-validate',
         'lazyload': 'vendors/lazyload/jquery.lazyload',
-        'share': 'vendors/share.js/js/social-share.min.js',
+
 
 
         'ueditor': 'vendors/ueditor/ueditor.all.min',

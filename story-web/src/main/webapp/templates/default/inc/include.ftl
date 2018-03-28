@@ -2,7 +2,7 @@
 ${site_metas}
 
 <link rel="stylesheet" media='all' href="${base}/dist/vendors/bootstrap/css/bootstrap.min.css">
-<link rel='stylesheet' media='all' href="${base}/dist/vendors/share.js/css/share.min.css"/>
+
 
 <link rel='stylesheet' media='all' href="${base}/static/default/css/style.css"/>
 <link rel='stylesheet' media='all' href="${base}/dist/css/plugins.css"/>

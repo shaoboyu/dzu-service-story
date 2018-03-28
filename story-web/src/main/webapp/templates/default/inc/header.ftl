@@ -21,17 +21,7 @@
                     </button>
                     <div id="ajax_login_message" class="text-danger"></div>
                     <hr>
-                    <fieldset class="form-group">
-                        <div class="alert alert-info">
-                            使用以下方法注册或者登录（<a class="forget-password" href="${base}/forgot/apply">忘记密码？</a>）
-                        </div>
-                        <a class="btn btn-default btn-block" href="${base}/oauth/callback/call_weibo">
-                            <i class="fa fa-weibo"></i> 微博帐号登录
-                        </a>
-                        <a class="btn btn-default btn-block" href="${base}/oauth/callback/call_qq">
-                            <i class="fa fa-qq"></i> QQ帐号登录
-                        </a>
-                    </fieldset>
+
                 </form>
             </div>
         </div><!-- /.modal-content -->
@@ -79,14 +69,6 @@
 					</#list>
                 </ul>
                 <ul class="navbar-button list-inline" id="header_user">
-                    <li view="search" class="hidden-xs hidden-sm">
-                        <form method="GET" action="${base}/search" accept-charset="UTF-8" class="navbar-form navbar-left">
-                            <div class="form-group">
-                                <input class="form-control search-input mac-style" placeholder="搜索" name="kw" type="text" value="${kw}">
-                                <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-                            </div>
-                        </form>
-                    </li>
 
 				<#if profile??>
                     <li><a href="${base}/post/new" class="btn btn-sm"><i class="icon icon-note"></i> 写文章</a></li>

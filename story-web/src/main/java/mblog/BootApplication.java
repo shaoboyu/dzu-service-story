@@ -1,5 +1,7 @@
 package mblog;
 
+import mblog.web.filter.RequestCostFilter;
+import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +15,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
 public class BootApplication extends SpringBootServletInitializer {
-
+    private static Logger log = Logger.getLogger(BootApplication.class);
     /**
      * 加载配置文件
      * */
@@ -28,7 +30,7 @@ public class BootApplication extends SpringBootServletInitializer {
      */
     public static void main(String[] args) {
         SpringApplication.run(BootApplication.class, args);
-        System.out.println("=====================>BootApplication start finish!<=======================");
+        log.info("=====================>BootApplication start finish!<=======================");
     }
 
 }

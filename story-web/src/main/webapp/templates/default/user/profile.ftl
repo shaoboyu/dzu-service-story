@@ -26,14 +26,7 @@
 					<div class="col-lg-4">
 						<span class="form-control">${view.email}</span>
 					</div>
-					<div class="col-lg-3" style="padding-top: 6px;">
-						<#if (view.activeEmail == 1)>
-							<span class="label label-success">已验证</span>
-						<#else>
-							<span class="label label-warning">未验证</span>
-						</#if>
-						<a href="${base}/user/email">修改邮箱</a>
-					</div>
+
 				</div>
 				<div class="form-group">
 					<label class="control-label col-lg-3" for="nickname">个性签名</label>

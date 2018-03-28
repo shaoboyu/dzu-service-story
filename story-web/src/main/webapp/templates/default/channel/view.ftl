@@ -17,10 +17,7 @@
 
                     <a class="author" href="${base}/users/${view.author.id}">
                     ${view.author.name}
-                    </a>
-                    <abbr class="timeago">${timeAgo(view.created)}</abbr>
-                    ⋅
-                ${view.views} 阅读
+                    </a>⋅
 
                 </div>
                 <div class="clearfix"></div>
@@ -38,12 +35,6 @@
                         </span>
                 </#list>
             </div>
-            <div class="panel-footer operate">
-                <div class="hidden-xs">
-                    <div class="social-share" data-sites="weibo, wechat, facebook, twitter, google, qzone, qq"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
         </div>
 
         <!-- Comments -->
@@ -54,12 +45,12 @@
             <ul id="chat_container" class="its"></ul>
             <div id="pager" class="text-center"></div>
             <div class="cbox-wrap">
-                <div class="cbox-title">我有话说: <span id="chat_reply" style="display:none;">@<i
+                <div class="cbox-title">我要接力: <span id="chat_reply" style="display:none;">@<i
                         id="chat_to"></i></span>
                 </div>
                 <div class="cbox-post">
                     <div class="cbox-input">
-                        <textarea id="chat_text" rows="3" placeholder="请输入评论内容"></textarea>
+                        <textarea id="chat_text" rows="3" placeholder="请接力内容"></textarea>
                         <input type="hidden" value="0" name="chat_pid" id="chat_pid"/>
                     </div>
                     <div class="cbox-ats clearfix">
