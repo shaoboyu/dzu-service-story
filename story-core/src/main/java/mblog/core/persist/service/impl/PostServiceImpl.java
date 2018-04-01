@@ -24,6 +24,8 @@ import mblog.core.persist.entity.PostPO;
 import mblog.core.persist.service.*;
 import mblog.core.persist.utils.BeanMapUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
@@ -60,6 +62,8 @@ public class PostServiceImpl implements PostService {
 	private ChannelService channelService;
 	@Autowired
 	private PostAttributeDao postAttributeDao;
+
+	private final static Logger LOGGER = LoggerFactory.getLogger(PostServiceImpl.class);
 
 	@Override
 	@Cacheable
@@ -240,8 +244,11 @@ public class PostServiceImpl implements PostService {
 		} else {
 			po.setSummary(post.getSummary());
 		}
-
-		postDao.save(po);
+		try{
+			postDao.save(po);
+		}catch (Exception e){
+			LOGGER.error("PostServiceImpl post error:{}",e);
+		}
 
 		PostAttribute attr = new PostAttribute();
 		attr.setContent(post.getContent());
