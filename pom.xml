@@ -152,6 +152,13 @@
 			</exclusions>
 		</dependency>
 
+		<!--阿里巴巴druid数据库连接池-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>1.1.4</version>
+		</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

@@ -23,6 +23,21 @@ spring:
         url: jdbc:mysql://118.89.245.135/db_story?useSSL=false&characterEncoding=utf8
         username: root
         password: root
+        # 使用druid做数据连接池
+        type: com.alibaba.druid.pool.DruidDataSource
+        filters: stat
+        maxActive: 20
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
 
     jpa:
         database: mysql
