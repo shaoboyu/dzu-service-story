@@ -3,7 +3,7 @@
 
 <div class="page-title">
     <div class="title_left">
-        <h3>${profile.username} <small> 欢迎使用Mblog</small></h3>
+        <h3>${profile.username} <small> 欢迎使用短故事接力系统</small></h3>
     </div>
 </div>
 <div class="clearfix">

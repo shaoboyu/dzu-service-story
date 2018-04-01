@@ -11,13 +11,8 @@
             <div class="x_content">
 
                 <div class="col-xs-3">
-                    <!-- required for floating -->
-                    <!-- Nav tabs -->
+
                     <ul class="nav nav-tabs tabs-left">
-                        <li class="active"><a href="#sites" data-toggle="tab" aria-expanded="true">站点配置</a>
-                        </li>
-                        <li class=""><a href="#settings" data-toggle="tab" aria-expanded="false">系统配置</a>
-                        </li>
                         <li class=""><a href="#cache" data-toggle="tab" aria-expanded="false">缓存及索引</a>
                         </li>
                     </ul>
@@ -26,20 +21,13 @@
                 <div class="col-xs-9">
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <div class="tab-pane active" id="sites">
-                            <#include "/admin/configs/sites.ftl">
-                        </div>
-                        <div class="tab-pane" id="settings">
-                            <#include "/admin/configs/settings.ftl">
-                        </div>
+
                         <div class="tab-pane" id="cache">
                             <div class="btn-channel" role="channel" aria-label="...">
                                 <button type="button" class="btn btn-default" data-action="flush_conf">
                                     刷新系统变量
                                 </button>
-                                <button type="button" class="btn btn-default" data-action="flush_indexs">
-                                    重建索引
-                                </button>
+
                             </div>
                         </div>
                     </div>

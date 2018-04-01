@@ -11,7 +11,7 @@
                         <li data-toggle="tooltip" title="点赞数排序">
                             <a href="?order=favors" <#if order == 'favors'> class="active" </#if>>精品区</a>
                         </li>
-                        <li data-toggle="tooltip" title="评论次数排序">
+                        <li data-toggle="tooltip" title="接力次数排序">
                             <a href="?order=hottest" <#if order == 'hottest'> class="active" </#if>>成品区</a>
                         </li>
                     </ul>
@@ -28,7 +28,7 @@
                                         <div class="count_set">
                                             <span class="count_of_votes" data-toggle="tooltip" title="阅读数">${row.views}</span>
                                             <span class="count_seperator">/</span>
-                                            <span class="count_of_replies" data-toggle="tooltip" title="回复数">${row.comments}</span>
+                                            <span class="count_of_replies" data-toggle="tooltip" title="接力数">${row.comments}</span>
                                             <span class="count_seperator">/</span>
                                             <span class="count_of_visits" data-toggle="tooltip" title="点赞数">${row.favors}</span>
                                             <span class="count_seperator">|</span>
