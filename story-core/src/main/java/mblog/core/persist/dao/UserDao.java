@@ -19,7 +19,11 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @author langhsu
+ * <p>
+ *     <b>使用JpaRepository进行简单查询</b>
+ *     <b>JpaSpecificationExecutor进行复杂查询你</b>
+ * </p>
+ * @author yushaobo
  */
 public interface UserDao extends JpaRepository<UserPO, Long>, JpaSpecificationExecutor<UserPO> {
     UserPO findByUsername(String username);

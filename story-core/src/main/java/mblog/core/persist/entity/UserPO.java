@@ -20,8 +20,8 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 /**
  * 用户信息
- *
- * @author langhsu
+ * 通过注解Entity与数据库形成映射关系
+ * @author yushaobo
  *
  */
 @Entity
