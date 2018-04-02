@@ -10,10 +10,10 @@
                         <a href="?order=newest" <#if order == 'newest'> class="active" </#if>>最近</a>
                     </li>
                     <li data-toggle="tooltip" title="点赞数排序">
-                        <a href="?order=favors" <#if order == 'favors'> class="active" </#if>>投票</a>
+                        <a href="?order=favors" <#if order == 'favors'> class="active" </#if>>精品区</a>
                     </li>
                     <li data-toggle="tooltip" title="评论次数排序">
-                        <a href="?order=hottest" <#if order == 'hottest'> class="active" </#if>>热门</a>
+                        <a href="?order=hottest" <#if order == 'hottest'> class="active" </#if>>成品区</a>
                     </li>
                 </ul>
                 <div class="clearfix"></div>
