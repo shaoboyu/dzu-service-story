@@ -17,6 +17,8 @@ import mblog.core.data.AccountProfile;
 import mblog.core.persist.service.UserService;
 import mblog.web.controller.BaseController;
 import mblog.web.controller.desk.Views;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -38,6 +40,8 @@ public class AvatarController extends BaseController {
 	@Autowired
 	private UserService userService;
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(AvatarController.class);
+
 	@RequestMapping(value = "/avatar", method = RequestMethod.GET)
 	public String view() {
 		return view(Views.USER_AVATAR);
@@ -45,6 +49,8 @@ public class AvatarController extends BaseController {
 	
 	@RequestMapping(value = "/avatar", method = RequestMethod.POST)
 	public String post(String path, Float x, Float y, Float width, Float height, ModelMap model) {
+
+		LOGGER.info("AvatarController start path is :{}",path);
 		AccountProfile profile = getSubject().getProfile();
 		
 		if (StringUtils.isEmpty(path)) {
@@ -54,6 +60,7 @@ public class AvatarController extends BaseController {
 		
 		if (width != null && height != null) {
 			String root = fileRepoFactory.select().getRoot();
+			LOGGER.info("AvatarController start root is :{}",root);
 			File temp = new File(root + path);
 			File scale = null;
 			
@@ -68,6 +75,8 @@ public class AvatarController extends BaseController {
 		        }
 		        // 在目标目录下生成截图
 		        String scalePath = f.getParent() + "/" + profile.getId() + ".jpg";
+
+				LOGGER.info("AvatarController start scalePath is :{}",scalePath);
 				ImageUtils.truncateImage(temp.getAbsolutePath(), scalePath, x.intValue(), y.intValue(), width.intValue());
 		        
 				// 对结果图片进行压缩
