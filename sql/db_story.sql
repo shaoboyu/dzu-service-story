@@ -1,21 +1,20 @@
 /*
 
- Mblog 初始数据库
+ dzu-service-story 初始数据库
  - 以下为部分带初始数据的表, 其他的表会在系统启动时自动生成
 
- Navicat Premium Data Transfer
+Navicat MySQL Data Transfer
 
- Source Server         : localhost
- Source Server Type    : MySQL
- Source Server Version : 50712
- Source Host           : localhost
- Source Database       : db_mblog
+Source Server         : ubuntu
+Source Server Version : 50721
+Source Host           : 118.89.245.135:3306
+Source Database       : db_story
 
- Target Server Type    : MySQL
- Target Server Version : 50712
- File Encoding         : utf-8
+Target Server Type    : MYSQL
+Target Server Version : 50721
+File Encoding         : 65001
 
- Date: 01/11/2018 10:26:54 AM
+Date: 2018-04-14 16:54:54
 */
 
 SET NAMES utf8;
