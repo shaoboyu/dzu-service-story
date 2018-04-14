@@ -1,6 +1,6 @@
 package test;
 
-import mblog.base.utils.ImageUtils;
+import story.base.utils.ImageUtils;
 
 import java.io.IOException;
 

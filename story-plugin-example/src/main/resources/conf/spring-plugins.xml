@@ -11,7 +11,7 @@
 	default-autowire="byName">
 
 	<context:annotation-config />
-	<context:component-scan base-package="mblog.plugin.example"/>
+	<context:component-scan base-package="story.plugin.example"/>
 
 	
 </beans>

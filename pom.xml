@@ -214,7 +214,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>mblog</finalName>
+		<finalName>story</finalName>
 		<resources>
 			<resource>
 				<directory>${basedir}/src/main/webapp</directory>
@@ -238,7 +238,7 @@
 				<configuration>
 					<jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
 					<executable>true</executable>
-					<mainClass>mblog.BootApplication</mainClass>
+					<mainClass>story.BootApplication</mainClass>
 					<includeSystemScope>true</includeSystemScope>
 				</configuration>
 				<executions>

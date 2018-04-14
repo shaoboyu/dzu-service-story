@@ -9,7 +9,7 @@
 	   default-autowire="byName">
 
 	<context:annotation-config />
-	<context:component-scan base-package="mblog.*"/>
+	<context:component-scan base-package="story.*"/>
 	
 	<bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
 		<property name="locations">
@@ -55,7 +55,7 @@
 		<!-- Entity package -->
 		<property name="packagesToScan">
 			<list>
-				<value>mblog.core.persist.entity</value>
+				<value>story.core.persist.entity</value>
 			</list>
 		</property>
 		<property name="dataSource" ref="dataSource" />
@@ -69,8 +69,8 @@
 	<tx:annotation-driven transaction-manager="txManager" />
 	
 	<!-- Beans -->
-	<bean id="appContext" class="mblog.base.context.AppContext">
+	<bean id="appContext" class="story.base.context.AppContext">
 		<property name="root" value="${store.root}"/>
 	</bean>
-	<bean id="fileRepo" class="mblog.base.upload.impl.FileRepoImpl"  />
+	<bean id="fileRepo" class="story.base.upload.impl.FileRepoImpl"  />
 </beans>
