@@ -24,8 +24,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author langhsu
- *
+ * 用户注册Controller
  */
 @Controller
 public class RegisterController extends BaseController {
