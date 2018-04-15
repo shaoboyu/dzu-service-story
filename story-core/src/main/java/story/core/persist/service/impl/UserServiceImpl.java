@@ -100,11 +100,11 @@ public class UserServiceImpl implements UserService {
 		UserPO check = userDao.findByUsername(user.getUsername());
 
 		Assert.isNull(check, "用户名已经存在!");
-
-		if (StringUtils.isNotBlank(user.getEmail())) {
-			check = userDao.findByEmail(user.getEmail());
-			Assert.isNull(check, "邮箱已经被注册!");
-		}
+//
+//		if (StringUtils.isNotBlank(user.getEmail())) {
+//			check = userDao.findByEmail(user.getEmail());
+//			Assert.isNull(check, "邮箱已经被注册!");
+//		}
 
 		UserPO po = new UserPO();
 

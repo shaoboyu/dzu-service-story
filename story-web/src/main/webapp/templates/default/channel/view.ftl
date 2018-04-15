@@ -18,6 +18,14 @@
                     <a class="author" href="${base}/users/${view.author.id}">
                     ${view.author.name}
                     </a>⋅
+                    <!--故事标签-->
+                    <div class="panel-footer operate">
+                        <#list view.tagsArray as tag>
+                            <span>
+                            <a class="label label-default" href="${base}/tag/${tag}/">#${tag}</a>
+                            </span>
+                        </#list>
+                    </div>
 
                 </div>
                 <div class="clearfix"></div>
@@ -27,21 +35,19 @@
                 <div class="markdown-body" id="emojify">
                 ${view.content}
                 </div>
+
+                <div id="chat" class="chats shadow-box">
+                    <!--接力内容展示-->
+                    <ul id="chat_container" class="its"></ul>
+                    <div id="pager" class="text-center"></div>
+                </div>
             </div>
-            <div class="panel-footer operate">
-                <#list view.tagsArray as tag>
-                    <span>
-                            <a class="label label-default" href="${base}/tag/${tag}/">#${tag}</a>
-                        </span>
-                </#list>
-            </div>
+
         </div>
 
         <!-- Comments -->
         <div id="chat" class="chats shadow-box">
-            <div class="chat_other">
-                <h4>全部评论: <i id="chat_count">0</i> 条</h4>
-            </div>
+            <!--接力内容展示-->
             <ul id="chat_container" class="its"></ul>
             <div id="pager" class="text-center"></div>
             <div class="cbox-wrap">

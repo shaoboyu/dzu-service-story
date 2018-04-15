@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author Beldon 2015/10/31
+ * 故事接力展示
+ * <b>取消提示</b>
  */
 @Component
 public class ViewCopyrightPugin implements ChannelControllerHook.ChannelControllerInterceptorListener {
@@ -23,11 +24,11 @@ public class ViewCopyrightPugin implements ChannelControllerHook.ChannelControll
     public void postHandle(HttpServletRequest request, HttpServletResponse response, HandlerMethod handler, ModelAndView modelAndView) throws Exception {
         Post ret = (Post) modelAndView.getModelMap().get("view");
         if (ret != null) {
-            String content = ret.getContent();
-            if (!content.contains("可在评论区进行接力创作")) {
-                content += "<br/>注：可在评论区进行接力创作";
-                ret.setContent(content);
-            }
+//            String content = ret.getContent();
+//            if (!content.contains("可在评论区进行接力创作")) {
+//                content += "<br/>注：可在评论区进行接力创作";
+//                ret.setContent(content);
+//            }
         }
     }
 

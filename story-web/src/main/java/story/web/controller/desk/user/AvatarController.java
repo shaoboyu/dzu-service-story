@@ -28,7 +28,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.io.File;
 
-
+/**
+ * 用户信息头像处理
+ * */
 @Controller
 @RequestMapping("/user")
 public class AvatarController extends BaseController {
