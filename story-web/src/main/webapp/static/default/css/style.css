@@ -1279,20 +1279,20 @@ abbr[data-original-title], abbr[title] {
 .chats .its li { display: block; padding: 15px 0; border-bottom: 1px solid #e5e5e5; }
 .chats .its li .avt { float: left; display: block; width: 40px; }
 .chats .its li .avt img { width: 100%; border-radius: 25px;}
-.chats .chat_body { margin-left: 50px; font-size: 13px; line-height: 18px; }
+.chats .chat_body { margin-left: 50px; font-size: 14px; line-height: 18px; }
 .chats .chat_body h5 { margin: 0; display: block; font-weight: 500; height: 25px; line-height: 20px; overflow: hidden; }
 .chats .chat_body a { color: #1f8902; font-size: 12px; }
 .chats .chat_body span { color: #b4b4b4; margin-left: 5px; }
 
 .chats .chat_body .quote { background: #f4f4f4; margin-top: 10px; padding: 10px; }
 .chats .reply_this a{ color: #ff8a00; font-size: 12px; height: 20px; cursor: pointer;}
-.chats .chat_p { color: #9c9c9c; }
+.chats .chat_p { color: #566573; }
 .chats .chat_reply { }
 
 .cbox-wrap { padding: 15px;}
 .cbox-wrap .cbox-title { margin-bottom: 10px; font-weight: 500;}
 .cbox-wrap .cbox-post { border: 1px solid #ccc;}
-.cbox-wrap .cbox-post a { color: #9c9c9c}
+.cbox-wrap .cbox-post a { color: #566573}
 .cbox-wrap .cbox-input {}
 .cbox-wrap .cbox-input textarea {border-style: none; display: block; width: 100%; padding: 6px; font-size: 14px; line-height: 1.42857143; color: #555; overflow-y: auto; overflow-x: hidden; resize: none;}
 

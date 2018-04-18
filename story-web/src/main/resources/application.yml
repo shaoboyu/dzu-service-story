@@ -20,7 +20,8 @@ spring:
 
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://118.89.245.135/db_story?useSSL=false&characterEncoding=utf8
+        #jdbc:mysql://118.89.245.135/db_story?useSSL=false&characterEncoding=utf8
+        url: jdbc:mysql://127.0.0.1/db_story?useSSL=false&characterEncoding=utf8
         username: root
         password: root
         # 使用druid做数据连接池

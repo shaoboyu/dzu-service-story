@@ -47,9 +47,7 @@
 
         <!-- Comments -->
         <div id="chat" class="chats shadow-box">
-            <!--接力内容展示-->
-            <ul id="chat_container" class="its"></ul>
-            <div id="pager" class="text-center"></div>
+
             <div class="cbox-wrap">
                 <div class="cbox-title">我要接力: <span id="chat_reply" style="display:none;">@<i
                         id="chat_to"></i></span>
