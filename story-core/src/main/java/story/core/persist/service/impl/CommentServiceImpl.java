@@ -30,11 +30,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
+import java.text.ParseException;
 import java.util.*;
 
 /**
- * @author langhsu
- *
+ * 故事接力模块逻辑处理
+ * @author yushaobo
  */
 @Service
 @Transactional(readOnly = true)
@@ -115,6 +116,22 @@ public class CommentServiceImpl implements CommentService {
 			uids.add(c.getAuthorId());
 
 			rets.add(c);
+		});
+		/**
+		 * 对接力内容采用时间先后进行排序处理
+		 * */
+		Collections.sort(rets, new Comparator<Comment>() {
+			@Override
+			public int compare(Comment o1, Comment o2) {
+				int ret = 0;
+				try {
+					//比较两个对象的顺序，如果前者小于、等于或者大于后者，则分别返回-1/0/1
+					ret = o1.getCreated().toString().compareTo(o2.getCreated().toString());
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				return ret;
+			}
 		});
 
 		// 加载父节点

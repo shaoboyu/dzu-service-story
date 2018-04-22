@@ -51,7 +51,7 @@ public class RegisterController extends BaseController {
 		try {
 			post.setAvatar(Consts.AVATAR);
 			User user = userService.register(post);
-			sendEmail(user);
+//			sendEmail(user);
 			data = Data.success("恭喜您! 注册成功!请重新登陆", Data.NOOP);
 			data.addLink("login", "重新登陆");
 			ret = view(Views.REGISTER_RESULT);

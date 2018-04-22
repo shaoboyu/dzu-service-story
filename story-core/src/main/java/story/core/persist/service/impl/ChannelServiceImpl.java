@@ -47,6 +47,9 @@ public class ChannelServiceImpl implements ChannelService {
 		return rets;
 	}
 
+	/**
+	 * 接力文章扫描
+	 * */
 	@Override
 	public Map<Integer, Channel> findMapByIds(Collection<Integer> ids) {
 		List<ChannelPO> list = channelDao.findAllByIdIn(ids);

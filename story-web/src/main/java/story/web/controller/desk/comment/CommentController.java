@@ -25,6 +25,9 @@ import org.springframework.web.util.HtmlUtils;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * 用于处理接力管理
+ **/
 @Controller
 @RequestMapping("/comment")
 public class CommentController extends BaseController {
